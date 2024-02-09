@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SistemaCafeteria.Models;
+using SistemaCafeteria.Modelos.ViewModels;
 using System.Diagnostics;
 
 namespace SistemaCafeteria.Controllers

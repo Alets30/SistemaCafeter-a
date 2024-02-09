@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace SistemaCafeteria.Data
+namespace SistemaCafeteria.AccesoDatos.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {

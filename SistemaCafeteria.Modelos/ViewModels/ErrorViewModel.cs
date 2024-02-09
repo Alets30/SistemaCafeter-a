@@ -1,4 +1,4 @@
-namespace SistemaCafeteria.Models
+namespace SistemaCafeteria.Modelos.ViewModels
 {
     public class ErrorViewModel
     {
