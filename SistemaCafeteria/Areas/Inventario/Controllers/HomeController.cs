@@ -2,8 +2,9 @@
 using SistemaCafeteria.Modelos.ViewModels;
 using System.Diagnostics;
 
-namespace SistemaCafeteria.Controllers
+namespace SistemaCafeteria.Areas.Inventario.Controllers
 {
+    [Area("Inventario")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
