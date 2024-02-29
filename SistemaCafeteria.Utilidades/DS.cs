@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaCafeteria.Utilidades
 {
-    public class DS
+    public static class DS
     {
     }
 }
