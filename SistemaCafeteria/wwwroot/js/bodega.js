@@ -28,7 +28,7 @@ function loadDataTable() {
                 "render": function (data) {
                     return `
                         <div class="text-center">
-                            <a href="/Admin/Bodega/Upsert\${data}" class="btn btn-success text-white" style="cursor:pointer">
+                            <a href="/Admin/Bodega/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
                                 <i class="bi bi-pencil-square"></i>
                             </a>
                             <a onclick=Delete("/Admin/Bodega/Delete/${data}") class="btn btn-danger text-white" style="cursor:pointer">
@@ -62,6 +62,33 @@ function loadDataTable() {
                 "orderable": "Ordenar por esta columna",
                 "orderableReverse": "Ordena al revés por esta columna"
             }
+        }
+    });
+}
+
+function Delete(url) {
+    swal({
+        title: "¿Estás seguro que deseas Eliminar la BODEGA?",
+        text: "Este registro no se podrá recuperar.",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true
+    }).then((borrar) => {
+        if (borrar) {
+            $.ajax({
+                type: "POST",
+                url: url,
+                success: function (data) {
+                    if (data.success) {
+                        toastr.success(data.message);
+                        //Actualizar la tabla
+                        datatable.ajax.reload();
+                    }
+                    else {
+                        toastr.error(data.message);
+                    }
+                }
+            });
         }
     });
 }
