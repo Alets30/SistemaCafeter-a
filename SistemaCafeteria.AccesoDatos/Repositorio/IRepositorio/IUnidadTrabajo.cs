@@ -8,8 +8,10 @@ namespace SistemaCafeteria.AccesoDatos.Repositorio.IRepositorio
 {
     public interface IUnidadTrabajo : IDisposable
     {
-        IBodegaRepositorio Bodega { get; set; }
+        IBodegaRepositorio Bodega { get; }
         ICategoriaRepositorio Categoria { get; }
+
+        IMarcaRepositorio Marca { get; }
 
         Task Guardar();
     }
