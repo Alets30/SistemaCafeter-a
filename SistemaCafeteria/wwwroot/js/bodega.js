@@ -15,12 +15,7 @@ function loadDataTable() {
             {
                 "data": "estado",
                 "render": function (data) {
-                    if (data == true) {
-                        return "Activo";
-                    }
-                    else {
-                        return "Inactivo";
-                    }
+                    return data == true ? "Activo" : "Inactivo";
                 }, "width": "20%"
             },
             {

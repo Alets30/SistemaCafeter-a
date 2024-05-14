@@ -247,7 +247,7 @@ namespace SistemaCafeteria.AccesoDatos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Bodegas");
+                    b.ToTable("Bodegas", (string)null);
                 });
 
             modelBuilder.Entity("SistemaCafeteria.Modelos.Categoria", b =>
@@ -273,7 +273,7 @@ namespace SistemaCafeteria.AccesoDatos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categorias");
+                    b.ToTable("Categorias", (string)null);
                 });
 
             modelBuilder.Entity("SistemaCafeteria.Modelos.Marca", b =>
@@ -299,7 +299,7 @@ namespace SistemaCafeteria.AccesoDatos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Marcas");
+                    b.ToTable("Marcas", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

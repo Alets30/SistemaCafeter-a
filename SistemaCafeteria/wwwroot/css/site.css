@@ -1,5 +1,15 @@
+:root {
+    --primario: #AB9F96;
+    --borde-boton: #332214;
+}
+
 html {
   font-size: 14px;
+}
+
+html a, text, p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
 }
 
 @media (min-width: 768px) {

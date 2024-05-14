@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-SistemaCafeteria-05bcebb1-cadc-44c1-80d6-0c5f6e991dad</UserSecretsId>
   </PropertyGroup>
@@ -21,6 +20,10 @@
     <ProjectReference Include="..\SistemaCafeteria.AccesoDatos\SistemaCafeteria.AccesoDatos.csproj" />
     <ProjectReference Include="..\SistemaCafeteria.Modelos\SistemaCafeteria.Modelos.csproj" />
     <ProjectReference Include="..\SistemaCafeteria.Utilidades\SistemaCafeteria.Utilidades.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\imagenes\productos\" />
   </ItemGroup>
 
 </Project>

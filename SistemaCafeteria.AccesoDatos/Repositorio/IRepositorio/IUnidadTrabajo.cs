@@ -11,6 +11,7 @@ namespace SistemaCafeteria.AccesoDatos.Repositorio.IRepositorio
         IBodegaRepositorio Bodega { get; }
         ICategoriaRepositorio Categoria { get; }
 
+        IProductoRepositorio Producto { get; }
         IMarcaRepositorio Marca { get; }
 
         Task Guardar();
